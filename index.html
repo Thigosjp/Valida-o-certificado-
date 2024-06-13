@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Certificados - Diploma Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Diploma Digital</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#validar">Validar Certificado</a></li>
+                    <li><a href="cadastro.html">Cadastrar Certificado</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre o Diploma Digital</h2>
+                <p>Informações sobre o programa de Diploma Digital.</p>
+            </div>
+        </section>
+
+        <section id="validar">
+            <div class="container">
+                <h2>Validar Certificado</h2>
+                <form id="validadorForm" onsubmit="return validarCertificado()">
+                    <label for="documento">Número do Certificado:</label>
+                    <input type="text" id="documento" name="documento" required>
+
+                    <button type="submit">Validar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Ministério da Educação. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body></html>
